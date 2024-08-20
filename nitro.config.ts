@@ -1,8 +1,14 @@
 //https://nitro.unjs.io/config
 export default defineNitroConfig({
   routeRules: {
-    '/**': {
-      proxy: 'https://www2.deepl.com/**'
-    }
+    // 为了测试服务器已经起来了
+    '/test/**': {},
+    '/jsonrpc/**': {
+      proxy: 'https://www2.deepl.com/jsonrpc/**'
+    },
+    // 原始路由
+    // '/**': {
+    //   proxy: 'https://www2.deepl.com/**'
+    // },
   }
 });
