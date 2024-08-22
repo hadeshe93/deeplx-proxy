@@ -6,6 +6,9 @@ export default defineNitroConfig({
     '/jsonrpc/**': {
       proxy: 'https://www2.deepl.com/jsonrpc/**'
     },
+    '/api/**': {
+      proxy: 'https://openrouter.ai/api/**'
+    },
     // 原始路由
     // '/**': {
     //   proxy: 'https://www2.deepl.com/**'
